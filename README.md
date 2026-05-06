@@ -171,14 +171,6 @@ footer {
 </section>
 
 <section>
-<h2>QR Կոդ</h2>
-<p>Սքանավորիր QR կոդը՝ կայքը բացելու համար</p>
-<img src="qr.png" alt="QR Code" width="150">
-</section>
-
-<footer>
-<p>© 2026 Ուսումնական կայք</p>
-</footer>
 
 </body>
 </html>
