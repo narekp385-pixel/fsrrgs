@@ -2,174 +2,82 @@
 <html lang="hy">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Գյուղատնտեսություն և Տրանսպորտ</title>
 
 <style>
 
-body{
+*{
     margin:0;
-    font-family:Arial;
-    background:#f2f2f2;
+    padding:0;
+    box-sizing:border-box;
 }
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#dcedc8,#ffffff);
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(45deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    animation: fade 2s;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* MENU */
 
 nav{
     background:#1b5e20;
-    padding:10px;
+    padding:15px;
     text-align:center;
+    position:sticky;
+    top:0;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:8px;
-    font-size:15px;
-}
-
-.section{
-    background:white;
-    margin:12px;
-    padding:15px;
-    border-radius:12px;
-}
-
-.section img{
-    width:100%;
-    border-radius:10px;
-}
-
-h2{
-    color:#2e7d32;
-}
-
-p{
-    font-size:16px;
-    line-height:1.6;
-}
-
-.qr{
-    text-align:center;
-    background:white;
-    margin:12px;
-    padding:15px;
-    border-radius:12px;
-}
-
-.qr img{
-    width:160px;
-}
-
-footer{
-    background:#2e7d32;
-    color:white;
-    text-align:center;
-    padding:10px;
-    margin-top:20px;
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-<a href="#a">Անասնապահություն</a>
-<a href="#d">Ձկնորսություն</a>
-<a href="#dz">Ձկնաբուծություն</a>
-<a href="#b">Բուսաբուծություն</a>
-<a href="#t">Տրանսպորտ</a>
-</nav>
-
-<div class="section" id="a">
-<img src="https://picsum.photos/600/300?1">
-
-<h2>🐄 Անասնապահություն</h2>
-
-<p>
-Անասնապահությունը գյուղատնտեսության կարևոր ճյուղ է։ Այն զբաղվում է կենդանիների բուծմամբ և մարդկանց ապահովում է կաթով մսով և այլ մթերքներով։
-</p>
-
-</div>
-
-<div class="section" id="d">
-
-<img src="https://picsum.photos/600/300?2">
-
-<h2>🎣 Ձկնորսություն</h2>
-
-<p>
-Ձկնորսությունը կատարվում է գետերում լճերում և ծովերում։ Այն կարևոր դեր ունի սննդի արտադրության մեջ։
-</p>
-
-</div>
-
-<div class="section" id="dz">
-
-<img src="https://picsum.photos/600/300?3">
-
-<h2>🐟 Ձկնաբուծություն</h2>
-
-<p>
-Ձկնաբուծությունը ձկների աճեցումն է հատուկ ջրավազաններում։ Այն օգնում է ստանալ մեծ քանակությամբ ձուկ։
-</p>
-
-</div>
-
-<div class="section" id="b">
-
-<img src="https://picsum.photos/600/300?4">
-
-<h2>🌱 Բուսաբուծություն</h2>
-
-<p>
-Բուսաբուծությունը զբաղվում է բույսերի աճեցմամբ։ Մարդիկ աճեցնում են ցորեն բանջարեղեն և մրգեր։
-</p>
-
-</div>
-
-<div class="section" id="t">
-
-<img src="https://picsum.photos/600/300?5">
-
-<h2>🚗 Տրանսպորտ և կապ</h2>
-
-<p>
-Տրանսպորտը մարդկանց և բեռների տեղափոխումն է իսկ կապը ապահովում է հաղորդակցությունը։
-</p>
-
-</div>
-
-<div class="qr">
-
-<h2>🔳 QR Կոդ</h2>
-
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://narekp385-pixel.github.io/fsrrgs/">
-
-</div>
-
-<footer>
-<p>© 2026</p>
-</footer>
-
-</body>
-</html>    margin:15px;
+    margin:15px;
     font-size:18px;
     transition:0.3s;
 }
 
 nav a:hover{
-    color:#c8e6c9;
+    color:#a5d6a7;
 }
+
+/* SECTION */
 
 .section{
     display:flex;
     align-items:center;
+    justify-content:space-between;
     gap:30px;
+
     background:white;
-    margin:25px;
-    padding:25px;
+    margin:30px;
+    padding:30px;
+
     border-radius:20px;
+
     box-shadow:0 5px 15px rgba(0,0,0,0.15);
-    animation:slide 1.2s;
+
+    animation: slide 1s;
     transition:0.3s;
 }
 
@@ -177,24 +85,35 @@ nav a:hover{
     transform:scale(1.02);
 }
 
-.section img{
-    width:320px;
-    border-radius:15px;
-}
-
 .text{
-    flex:1;
+    width:60%;
 }
 
-h2{
+.text h2{
+    font-size:35px;
+    margin-bottom:20px;
     color:#2e7d32;
-    font-size:32px;
 }
 
-p{
-    font-size:19px;
+.text p{
+    font-size:20px;
     line-height:1.8;
 }
+
+/* IMAGE */
+
+.image{
+    width:35%;
+}
+
+.image img{
+    width:100%;
+    border-radius:20px;
+    height:300px;
+    object-fit:cover;
+}
+
+/* FOOTER */
 
 footer{
     background:#2e7d32;
@@ -204,34 +123,29 @@ footer{
     margin-top:30px;
 }
 
-.qr{
-    text-align:center;
-    background:white;
-    margin:25px;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
-}
-
-.qr img{
-    width:220px;
-}
+/* ANIMATIONS */
 
 @keyframes fade{
-    from{opacity:0;}
-    to{opacity:1;}
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 
 @keyframes slide{
     from{
-        opacity:0;
         transform:translateY(50px);
+        opacity:0;
     }
     to{
-        opacity:1;
         transform:translateY(0);
+        opacity:1;
     }
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -239,11 +153,199 @@ footer{
     flex-direction:column;
 }
 
-.section img{
+.text{
+    width:100%;
+}
+
+.image{
     width:100%;
 }
 
 }
 
 </style>
+
 </head>
+
+<body>
+
+<header>
+<h1>🌿 Գյուղատնտեսություն, Տրանսպորտ և Կապ</h1>
+<p>Ժամանակակից ուսումնական կայք</p>
+</header>
+
+<nav>
+<a href="#animals">Անասնապահություն</a>
+<a href="#fishing">Ձկնորսություն</a>
+<a href="#fishfarm">Ձկնաբուծություն</a>
+<a href="#plants">Բուսաբուծություն</a>
+<a href="#transport">Տրանսպորտ և կապ</a>
+</nav>
+
+<!-- ANASNAPAHUTYUN -->
+
+<section class="section" id="animals">
+
+<div class="text">
+
+<h2>🐄 Անասնապահություն</h2>
+
+<p>
+
+Անասնապահությունը գյուղատնտեսության ամենակարևոր ճյուղերից մեկն է։ 
+Այն զբաղվում է ընտանի կենդանիների բուծմամբ և խնամքով։ 
+Մարդիկ անասնապահությամբ զբաղվել են հազարավոր տարիներ։ 
+Այս ոլորտը մարդկանց ապահովում է կաթով, մսով, բրդով և այլ կարևոր մթերքներով։ 
+
+Հայաստանում տարածված են կովաբուծությունը, ոչխարաբուծությունը և թռչնաբուծությունը։ 
+Կենդանիների ճիշտ խնամքը օգնում է ստանալ բարձրորակ արտադրանք։ 
+Ժամանակակից անասնապահության մեջ օգտագործվում են նոր տեխնոլոգիաներ և հատուկ սարքավորումներ։
+
+</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<!-- DZKNORSUTYUN -->
+
+<section class="section" id="fishing">
+
+<div class="text">
+
+<h2>🎣 Ձկնորսություն</h2>
+
+<p>
+
+Ձկնորսությունը մարդկանց հնագույն զբաղմունքներից մեկն է։ 
+Այն իրենից ներկայացնում է ձկների որս բնական ջրերում՝ գետերում, լճերում և ծովերում։ 
+Ձուկը համարվում է առողջարար սնունդ, քանի որ հարուստ է վիտամիններով և օգտակար նյութերով։ 
+
+Շատ երկրներում ձկնորսությունը կարևոր տնտեսական ճյուղ է։ 
+Այն ապահովում է աշխատատեղեր և զարգացնում տնտեսությունը։ 
+Ժամանակակից ձկնորսության մեջ օգտագործվում են նավեր, ցանցեր և տարբեր տեխնոլոգիաներ։ 
+Կարևոր է պահպանել բնությունը և չվնասել ջրային կենդանական աշխարհը։
+
+</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<!-- DZKNABUTYUN -->
+
+<section class="section" id="fishfarm">
+
+<div class="text">
+
+<h2>🐟 Ձկնաբուծություն</h2>
+
+<p>
+
+Ձկնաբուծությունը ձկների արհեստական աճեցումն է հատուկ պայմաններում։ 
+Այն իրականացվում է լճակներում, ջրավազաններում և հատուկ տնտեսություններում։ 
+Այս ոլորտը շատ կարևոր է, քանի որ օգնում է մարդկանց ապահովել սննդով և պահպանել բնական ռեսուրսները։ 
+
+Հայաստանում զարգացած է իշխանի և այլ ձկների բուծումը։ 
+Ժամանակակից ձկնաբուծարաններում օգտագործվում են մաքուր ջուր և հատուկ կերեր։ 
+Ձկնաբուծությունը համարվում է գյուղատնտեսության ժամանակակից և կարևոր ուղղություն։
+
+</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<!-- BUSABUTYUN -->
+
+<section class="section" id="plants">
+
+<div class="text">
+
+<h2>🌱 Բուսաբուծություն</h2>
+
+<p>
+
+Բուսաբուծությունը զբաղվում է տարբեր բույսերի և մշակաբույսերի աճեցմամբ։ 
+Մարդիկ բուսաբուծությամբ ստանում են հացահատիկ, բանջարեղեն, մրգեր և այլ սննդամթերքներ։ 
+
+Բույսերի աճի համար անհրաժեշտ են բերրի հող, ջուր, արևի լույս և լավ խնամք։ 
+Հայաստանում տարածված է ցորենի, կարտոֆիլի, խաղողի և տարբեր մրգերի մշակումը։ 
+Ժամանակակից տեխնոլոգիաները օգնում են ստանալ ավելի մեծ և որակյալ բերք։
+
+</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<!-- TRANSPORT -->
+
+<section class="section" id="transport">
+
+<div class="text">
+
+<h2>🚗 Տրանսպորտ և կապ</h2>
+
+<p>
+
+Տրանսպորտը մարդկանց և բեռների տեղափոխման միջոց է։ 
+Գոյություն ունեն ավտոմոբիլային, երկաթուղային, օդային և ջրային տրանսպորտներ։ 
+Տրանսպորտը կարևոր դեր ունի տնտեսության զարգացման և մարդկանց առօրյայի մեջ։ 
+
+Կապը ապահովում է մարդկանց միջև հաղորդակցությունը։ 
+Ժամանակակից աշխարհում մարդիկ օգտվում են հեռախոսներից, ինտերնետից և տարբեր կապի միջոցներից։ 
+Կապն ու տրանսպորտը օգնում են արագ տեղեկություն փոխանցել և կապել աշխարհի տարբեր երկրներ։
+
+</p>
+
+</div>
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🔳 QR Կոդ</h2>
+
+<p>Սկանավորիր կայքը բացելու համար</p>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://narekp385-pixel.github.io/fsrrgs/" alt="QR">
+
+<br><br>
+
+<p>© 2026 Ուսումնական կայք</p>
+
+</footer>
+
+</body>
+</html>
